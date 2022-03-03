@@ -30,11 +30,102 @@
 
             padding: 8px;
         }
+
+        .animation {
+            animation: textColor 3s;
+        }
+
+        @keyframes textColor {
+            0% {
+                background: steelblue;
+            }
+            25% {
+                background: dodgerblue;
+            }
+            50% {
+                background: deepskyblue;
+            }
+            75% {
+                background: skyblue;
+            }
+            100% {
+                background: steelblue;
+            }
+        }
     </style>
+    <script>
+        window.onload = () => {
+            const text = document.querySelector("#text")
+            let preventClick = false
+            let count = 0
+            text.addEventListener("click", (e) => {
+                if (preventClick) {
+                    return
+                }
+                if (!text.classList.contains("animation")) {
+                    text.classList.add("animation")
+                    setTimeout(() => {
+                        text.classList.remove("animation")
+                        count++
+                        switch (count) {
+                            case 5: {
+                                text.innerHTML = decodeURIComponent(window.atob("JUU4JUJGJTk4JUU3JTlDJTlGJUU2JTk4JUFGJUU1JUE1JUJEJUU1JUE1JTg3JUU1JTkxJUEyJTJDJTIwJUU0JUJCJTgwJUU0JUI5JTg4JUU5JTgzJUJEJUU2JTgzJUIzJUU4JUE2JTgxJUU3JTlDJThCJUU0JUI4JTgwJUU3JTlDJThCLi4u"))
+                                break
+                            }
+                            case 6: {
+                                text.innerHTML = decodeURIComponent(window.atob("JUU1JUJFJTgxJUU1JTg1JUI1JUU1JTg4JUIwJUU1JUJEJUI5JUU1JTg5JThEJUU2JTk1JTk5JUU4JTgyJUIyJUU0JUJBJTg2LiUyMCVFNSVBNiU4MiVFNiU5RSU5QyVFNyU5QyU5RiVFOCVCRiU4NyVFNCVCQSU4NiVFNCVCQyVCMCVFOCVBRSVBMSVFNCVCOSU5RiVFNiVCMiVBMSVFNiU5QyVCQSVFNCVCQyU5QSVFNiU5QiVCNCVFNiU5NiVCMCVFNiU4OCU5MSVFNyU5QSU4NCVFOSU4MiVBMyVFNCVCOCVBQSVFNSVCMCU4RiVFNyVBMCVCNCVFNyVCRCU5MSVFNyVBQiU5OSVFNCVCQSU4NiVFNSU5MCVBNy4="))
+                                text.style.height = "60px"
+                                break
+                            }
+                            case 7: {
+                                text.innerHTML = decodeURIComponent(window.atob("JUU1JTlGJTlGJUU1JTkwJThEJUU2JTlBJTgyJUU2JTk3JUI2JUU0JUJDJUIwJUU4JUFFJUExJUU2JTk4JUFGJUU4JUJGJTg3JUU2JTlDJTlGJUU0JUI4JThEJUU0JUJBJTg2JTJDJTIwJUU0JUJEJTg2JUU2JTk4JUFGJUU2JTlDJThEJUU1JThBJUExJUU1JTk5JUE4JUU2JTgwJUJCJUU0JUI4JThEJUU1JThGJUFGJUU4JTgzJUJEJUU0JUI4JTgwJUU3JTlCJUI0JUU3JUJCJUFEJUU4JUI0JUI5JUU1JTkwJUE3LiUyMCVFNiU4OSU4MCVFNCVCQiVBNSVFNyU5QiVCNCVFNiU4RSVBNSVFNSVCQyU4NCVFNCVCOCVBQSVFOSU5RCU5OSVFNiU4MCU4MSVFNyVCRCU5MSVFOSVBMSVCNSVFNyU5QiVCNCVFNiU4RSVBNSVFNiU4OSU5OCVFNyVBRSVBMWdpdGh1YiVFNSU5MCVBNy4="))
+                                text.style.height = "80px"
+                                break
+                            }
+                            case 8: {
+                                text.innerHTML = decodeURIComponent(window.atob("JUU5JTgyJUEzJUU1JUIwJUIxJUU5JTlBJThGJUU0JUJFJUJGJUU1JTg2JTk5JUU1JTg3JUEwJUU1JThGJUE1JUU1JUJEJTkzJUU1JUJEJUE5JUU4JTlCJThCJUU1JTkwJUE3JTJDJTIwJUU5JUE2JTk2JUU1JTg1JTg4JUU2JTk4JUFGJUU2JTk4JUFGJUU2JTg0JTlGJUU4JUIwJUEyJUU2JUFEJUE2JUU4JTgwJTgxJUU1JUI4JTg4JUU0JUJBJThFJUU4JTgwJTgxJUU1JUI4JTg4JUU1JUI4JUE2JUU5JUEyJTg2JUU2JTg4JTkxJUU1JThGJTgyJUU1JThBJUEwJUU0JUJBJTg2JUU4JUJGJTk5JUU0JUI5JTg4JUU1JUE0JTlBJUU2JUFGJTk0JUU4JUI1JTlCLg=="))
+                                break
+                            }
+                            case 9: {
+                                text.innerHTML = decodeURIComponent(window.atob("JUU1JThFJUJCJUU1JUFEJUE2JUU2JUEwJUExJUU4JUI3JTkxJUU4JTg1JUJGJUU0JUI4JThEJUU2JTk4JUFGJUU5JUJBJUJCJUU3JTgzJUE2JUU0JUJBJThFJUU4JTgwJTgxJUU1JUI4JTg4JUU1JUIwJUIxJUU2JTk4JUFGJUU2JTlEJThFJUU4JTgwJTgxJUU1JUI4JTg4JTJDJTIwJUU3JTlDJTlGJUU2JTk4JUFGJUU3JUJCJTk5JUU4JTgwJTgxJUU1JUI4JTg4JUU2JUI3JUJCJUU0JUJBJTg2JUU0JUI4JThEJUU1JUIwJTkxJUU5JUJBJUJCJUU3JTgzJUE2Lg=="))
+                                text.style.height = "60px"
+                                break
+                            }
+                            case 10: {
+                                text.innerHTML = decodeURIComponent(window.atob("JUU1JTkwJThDJUU2JTk3JUI2JUU1JUE0JUE3JUU1JUE1JUI2JUU1JUJDJUJBJTJDJTIwUzZtcGxlJTJDJTIwJUU1JUE0JUE3JUU0JUJEJTkwJTJDJTIwJUU1JThEJTkzJUU2JUFDJUEzJUU0JUI4JTkzJUU1JThEJTg3JUU2JTlDJUFDJUU4JUE2JTgxJUU1JThBJUEwJUU2JUIyJUI5JUU1JTk1JThBJTJDJTIwJUU1JTg4JUFCJUU1JUE0JUFBJUU5JTkzJUE1JUU0JUJBJUJBJUU0JUJBJTg2Lg=="))
+                                break
+                            }
+                            case 11: {
+                                text.innerHTML = decodeURIComponent(window.atob("JUU1JUFFJUI2JUU5JTg3JThDJUU1JTk4JTlCJTJDJTIwJUU1JUI4JThDJUU2JTlDJTlCJUU4JTgwJTgxJUU3JTg4JUI3JUU1JUFEJTkwJUU1JTg4JUFCJUU2JTgzJUI5JUU0JUJBJThCJUU1JUIwJUIxJUU4JUExJThDJUU0JUJBJTg2JTJDJTIwJUU1JUI5JUIzJUU1JUI5JUIzJUU1JUFFJTg5JUU1JUFFJTg5JUU2JTg5JThEJUU2JTk4JUFGJUU3JUE2JThGJUU1JTk4JTlCLg=="))
+                                break
+                            }
+                            case 12: {
+                                text.innerHTML = decodeURIComponent(window.atob("JUU2JTgxJTkyJUU2JTgxJTkyJUU1JTg2JUIyJUU1JTg2JUIyJUU1JUE1JUJEJUU1JUE1JUJEJUU1JUFEJUE2JUU0JUI5JUEwJUU1JTk1JThBeGJ6eiVFNCVCQiVBQyE="))
+                                text.style.height = "30px"
+                                break
+                            }
+                            case 13: {
+                                text.innerHTML = decodeURIComponent(window.atob("JUU3JTlEJUExJUU4JUE3JTg5JUU0JUJBJTg2JTJDJTIwJUU1JUI4JThDJUU2JTlDJTlCJUU2JTk4JThFJUU1JUE0JUE5JUU0JUI4JTgwJUU4JUI3JUFGJUU5JUExJUJBJUU1JTg4JUE5JUU1JTkwJUE3Lg=="))
+                                break
+                            }
+                            case 14: {
+                                text.innerHTML = decodeURIComponent(window.atob("MjAyMi4zLjMlMjAyMyUzQTMy"))
+                                break
+                            }
+                            case 15: {
+                                window.location.reload()
+                                break
+                            }
+                        }
+                    }, 3000)
+                }
+            })
+        }
+    </script>
 </head>
 <body>
-    <div class="center">
-        <h2 class="text box" id="text">短暂的离别,是为了未来更好的相遇!</h2>
-    </div>
+<div class="center">
+    <h2 class="text box" id="text">短暂的离别,是为了未来更好的相遇!</h2>
+</div>
 </body>
 </html>
